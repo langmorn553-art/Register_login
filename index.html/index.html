@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Student Registration</h1>
+        <p>Enter your information to register.</p>
+    </header>
+
+    <main>
+        <form method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+
+                <p>
+                    <label for="roll-number">Roll number:</label>
+                    <input type="text" id="roll-number" name="roll_number" required>
+                </p>
+
+                <p>
+                    <label for="student-name">Student name:</label>
+                    <input type="text" id="student-name" name="student_name" autocomplete="name" required>
+                </p>
+
+                <p>
+                    <label for="father-name">Father's name:</label>
+                    <input type="text" id="father-name" name="father_name">
+                </p>
+
+                <p>
+                    <label for="date-of-birth">Date of birth:</label>
+                    <input type="date" id="date-of-birth" name="date_of_birth" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact information</legend>
+
+                <p>
+                    <label for="mobile-number">Mobile number:</label>
+                    <input type="tel" id="mobile-number" name="mobile_number" autocomplete="tel" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account and study details</legend>
+
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" autocomplete="new-password" minlength="8" required>
+                </p>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="gender-male" name="gender" value="male" required>
+                    <label for="gender-male">Male</label>
+                    <input type="radio" id="gender-female" name="gender" value="female">
+                    <label for="gender-female">Female</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Department</legend>
+                    <input type="radio" id="department-philosophy" name="department" value="philosophy" required>
+                    <label for="department-philosophy">Philosophy</label>
+                    <input type="radio" id="department-application" name="department" value="application">
+                    <label for="department-application">Application</label>
+                    <input type="radio" id="department-data-science" name="department" value="data-science">
+                    <label for="department-data-science">Data Science</label>
+                    <input type="radio" id="department-marketing" name="department" value="marketing">
+                    <label for="department-marketing">Marketing</label>
+                    <input type="radio" id="department-civil" name="department" value="civil">
+                    <label for="department-civil">Civil</label>
+                    <input type="radio" id="department-engineering" name="department" value="engineering">
+                    <label for="department-engineering">Engineering</label>
+                </fieldset>
+            </fieldset>
+
+            <p>
+                <button type="submit">Register</button>
+                <button type="reset">Clear form</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
